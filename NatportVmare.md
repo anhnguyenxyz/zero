@@ -4,7 +4,7 @@ có thể bạn muốn truy cập đến máy ảo đó từ một máy tính kh
 Ví dụ: Bạn có một máy ảo Ubuntu với Apache chạy trên cổng 80,
 và bạn muốn xem những người khác trên mạng của bạn truy cập đến website của bạn. 
 
--Giả sử rằng máy ảo này dùng NAT, và đăng kí địa chỉ IP là 208.100.26.26. 
+-Giả sử rằng máy ảo này dùng NAT, và đăng kí địa chỉ IP là 208.100.26.25. 
 
 Step 1: Edit / Virtual Network Editor
 
