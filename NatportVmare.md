@@ -8,5 +8,9 @@ và bạn muốn xem những người khác trên mạng của bạn truy cập 
 
 Step 1: Edit / Virtual Network Editor
 
-![A](https://st.quantrimang.com/photos/image/032009/17/vmwarenat.jpg)
+![A](Image/Step1.png)
+
+![A](C:\Users\SA\Documents\GitHub\zero\Image\Step1.png)
+C:\Users\SA\Documents\GitHub\zero\Image\Step1.png
+
 
