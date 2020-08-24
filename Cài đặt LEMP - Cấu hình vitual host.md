@@ -5,17 +5,17 @@
 ## II. Install LEMP
 ## III. Vitual host
 
-#I. LEMP là gì?
+# I. LEMP là gì?
 
 **LEMP** : là chữ viết tắt thường được dùng để chỉ sự sử dụng các phần mềm Linux, Nginx, MySQL/MariaDB và PHP/PHP-FPM để tạo nên một môi trường máy chủ Web giúp triển khai các website trên môi trường Internet.
 
-#II. Install LEMP
+# II. Install LEMP
 
 - Update OS CentOS 7
 ```yum install update
 ```
 
-##1. Install nginx
+## 1. Install nginx
 
 ' yum install epel-release -y  
   yum install nginx -y'
@@ -56,7 +56,7 @@ http://IP máy chủ nginx của bạn
 ```
 
 
-##2.  Install Mariadb
+## 2.  Install Mariadb
 
 Cài đặt mariaDB
 ```
@@ -99,7 +99,7 @@ Remove test database and access to it? [Y/n]
 Reload privilege tables now? [Y/n]
 
 ```
-##3. Cài đặt PHP73
+## 3. Cài đặt PHP73
 
 Download và cài đặt các gói repository
 ```
@@ -119,7 +119,7 @@ Cài đặt module PHP
 ```
       yum --enablerepo=remi,remi-php73 install php-opcache php-pecl-apcu php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongodb php-pecl-redis php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
 ```
-##4. Cấu hình Nginx với php
+## 4. Cấu hình Nginx với php
 
 - Tạo mới cà cấu hình file
 ```
@@ -181,8 +181,8 @@ listen = /var/run/php-fpm/php-fpm.sock
 systemctl start php-fpm.service
 systemctl enable php-fpm.service
 ```
-#III. Vitual host
-##1. Cấu hình /var/www/
+# III. Vitual host
+## 1. Cấu hình /var/www/
 - Tạo thư mục chứa dữ liệu website1.com
 ```
 sudo mkdir -p  /var/www/website1.com/public_html
@@ -211,7 +211,7 @@ sudo nano /var/www/example.com/public_html/index.html
 Lưu file.
 Làm tương tự với website 2
 
-##2. Tạo virtual host file với định đạng .conf
+## 2. Tạo virtual host file với định đạng .conf
 
 - Website 1
 ```
@@ -238,7 +238,7 @@ server {
 ```
 systemctl restart nginx
 ```
-###3. Tiến hành kiểm tra
+### 3. Tiến hành kiểm tra
 - Kiểm tra kết quả qua trình duyệt windows, ta cần chỉnh sửa file host
 
 Mở file host theo đường dẫn sau
