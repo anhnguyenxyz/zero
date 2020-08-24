@@ -1,4 +1,4 @@
-# Ở bài này tôi sẽ chỉ hướng dẫn cách các bạn làm sao để cài đặt được một check_mk server để có thể giám sát hệ thống của riêng bạn.
+# Hướng dẫn cài đặt được một check_mk server.
 # Các bước cài đặt
 - Cài đặt gói wget
 ```
