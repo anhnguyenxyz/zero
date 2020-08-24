@@ -1,4 +1,4 @@
-![](Image/Setup-Rsyslog-Client-in-CentOS-7.png)
+
 
 # I. Log là gì?
 - **Log** ghi lại liên tục các thông báo về hoạt động của cả hệ thống hoặc của các dịch vụ được triển khai trên hệ thống và file tương ứng. Log file thường là các file văn bản thông thường dưới dạng “clear text” tức là bạn có thể dễ dàng đọc được nó, vì thế có thể sử dụng các trình soạn thảo văn bản (vi, vim, nano…) hoặc các trình xem văn bản thông thường (cat, tailf, head…) là có thể xem được file log.
@@ -27,4 +27,14 @@ Syslog có thể gửi qua UDP hoặc TCP. Các dữ liệu được gửi dạn
 - **Syslog** được chia làm 8 mức độ nghiêm trọng từ trái trang phải:
 ```
 Emergency, Alert, Critical, Error, Warning, Notice, Info, and Debug.
+```
+- Syslog sử dụng cả UDP và TCP
+Syslog sử dụng Port 514 cho UDP
+Hệ thống triển khai log hệ thống gần đây như rsyslog hoặc syslog-ng làm kênh liên lạc an toàn.
+- Có thể sử dụng giao thức TLS/SSL trên TCP để mã hóa các gói Syslog
+
+
+Nguồn: Bài viết quá hay.
+```
+https://news.cloud365.vn/log-ly-thuyet-tong-quan-ve-log-syslog-rsyslog/
 ```
