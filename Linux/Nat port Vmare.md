@@ -1,4 +1,5 @@
-Cho phép truy cập đến VMware Virtual Machine (NAT) từ một máy tính khác.
+# Nat port Vmware
+# Cho phép truy cập đến VMware Virtual Machine (NAT) từ một máy tính khác.
 - Nếu bạn có một máy ảo trên máy tính của bạn, 
 có thể bạn muốn truy cập đến máy ảo đó từ một máy tính khác. 
 Ví dụ: Bạn có một máy ảo Ubuntu với Apache chạy trên cổng 80,
