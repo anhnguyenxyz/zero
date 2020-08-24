@@ -12,10 +12,10 @@ Step 1: Edit / Virtual Network Editor
 
 Step 2 : 
 
-![Image/Step2.png]
+![](Image/Step2.png)
 
 Step 3:
-![Image/Step3.png]
+![](Image/Step3.png)
 
 
 
