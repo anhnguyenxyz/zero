@@ -10,7 +10,12 @@ Step 1: Edit / Virtual Network Editor
 
 ![A](Image/Step1.png)
 
-![A](C:\Users\SA\Documents\GitHub\zero\Image\Step1.png)
-C:\Users\SA\Documents\GitHub\zero\Image\Step1.png
+Step 2 : 
+
+![Image\Step2.png]
+
+Step 3:
+![Image\Step3.png]
+
 
 
