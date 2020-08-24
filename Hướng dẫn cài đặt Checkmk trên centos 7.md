@@ -39,6 +39,6 @@ htpasswd -m ~/etc/htpasswd omdadmin
 ```
 http://208.100.26.25/monitoring
 ```
-![](Image/check mk.PNG)
+![](Image/checkmk.PNG)
 
 Chúc các bạn thành công!
