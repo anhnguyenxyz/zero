@@ -5,6 +5,10 @@
 ```
 getenforce
 ```
+Nếu bị lỗi Permissive - sử dụng lệnh sau
+```
+sudo setenforce 0
+```
 Sửa cấu hình SELinux
 ```
 vim /etc/sysconfig/selinux
@@ -26,13 +30,11 @@ http://IP_server_checkmk/monitoring/check_mk/agents
 
 Tải file về
 ```
-http://208.100.26.25/monitoring/check_mk/agents/agent-mk-agent-1.5.op12.noarch.rpm
+udo wget http://208.100.26.25/monitoring/check_mk/agents/check-mk-agent-1.5.0p12-1.noarch.rpm
 ```
 Cài đặt check_mk Agent
 ```
-yum install check-mk-agent-1.6.0p10-1.noarch.rpm
-```
-yum install agent-mk-agent-1.5.op12.noarch.rpm
+yum install check-mk-agent-1.5.0p12-1.noarch.rpm
 ```
 
 Chúc các bạn thành công!
