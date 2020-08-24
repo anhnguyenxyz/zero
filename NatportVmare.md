@@ -10,12 +10,14 @@ Step 1: Edit / Virtual Network Editor
 
 ![A](Image/Step1.png)
 
-Step 2 : 
+Step 2 : Nhấn vào thẻ NAT, sau đó nhấn Edit. Bạn sẽ thấy hộp thoại NAT Settings:
 
 ![](Image/Step2.png)
 
-Step 3:
+Step 3: Bây giờ bạn sẽ thấy một màn hình mà chúng ta thực sự cần. Chúng ta sẽ dùng cổng 80 trên host. Điền vào địa chỉ IP cho máy ảo CentOS, và cổng 80. Cổng này có thể là bất kì cổng nào.
 ![](Image/Step3.png)
 
+- Chúng ta có thể kiểm tra thử bằng cách vào http://localhost:80 trên máy tính thật. Ngoài ra có thể thay thế localhost bằng địa chỉ IP của máy tính thật.
 
 
+Chúc các bạn thành công!
