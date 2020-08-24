@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt được một check_mk server.
+# Hướng dẫn cài đặt check_mk server.
 # Các bước cài đặt
 - Cài đặt gói wget
 ```
