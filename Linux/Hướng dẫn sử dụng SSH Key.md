@@ -1,5 +1,5 @@
 # Tìm hiểu về SSH Key
-- SSH Keys là một phương thức xác thực đăng nhập với máy chủ thông qua truy cập SSH bằng việc đối chiếu giữa một cặp keys (Private và Public Key)
+## - SSH Keys là một phương thức xác thực đăng nhập với máy chủ thông qua truy cập SSH bằng việc đối chiếu giữa một cặp keys (Private và Public Key)
 # I. SSH key là gì
 # II. SSH có những thành phần nào
 # III. Nguyên tắc hoạt động của SSH key
