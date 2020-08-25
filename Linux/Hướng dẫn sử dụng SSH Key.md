@@ -75,4 +75,5 @@ Với B là địa chỉ IP của server B, sau đó hiển thị thông báo nh
 
 Chúc các bạn thành công.
 
+Nguồn tham khảo : https://blog.cloud365.vn/other/su-dung-SSH-KEY/
 
