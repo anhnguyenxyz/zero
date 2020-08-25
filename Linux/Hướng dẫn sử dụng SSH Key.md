@@ -57,9 +57,10 @@ Click vào nút : Generate
 
 ![WinSCPL](Image/SSH-Key-Linux1.PNG)
 - Trong ảnh trên nhập thông tin IP của server Linux.
+
 ![SSH-Server](Image/SSH2.png)
 
-- Trong ảnh trên ta cần Browse tới đường dẫn chứa file private key (private.ppk) sau đó click vào open để kết nối.
+- Trong ảnh trên ta cần Browse tới đường dẫn chứa file private key (privatekey.ppk) sau đó click vào open để kết nối.
 
 ## 2. Truy cập SSH giữa 2 server linux
 ![SSH2Server](Image/SSH-Server-Server.png)
