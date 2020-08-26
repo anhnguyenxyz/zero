@@ -37,7 +37,6 @@ Các ứng dụng hiểu mã trạng thái HTTP không cần phải biết tất
 |       305      | Use Proxy                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
 |       307      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
 |       308      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       400      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |.
-
+|       400      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
 
 
