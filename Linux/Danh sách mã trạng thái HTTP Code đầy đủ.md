@@ -19,25 +19,63 @@ Các ứng dụng hiểu mã trạng thái HTTP không cần phải biết tất
 | Mã trạng thái  |           Cụm từ chỉ lý do             |                        Giải thích lỗi| 
 |-|-|-|
 |       100      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       101      | Switching Protocols                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       102      | Processing                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       200      | OK                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       201      | Created                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       202      | Accepted                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       203      | Non-Authoritative Information                              | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       204      | No Content                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       205      | Reset Content                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       206      | Partial Content                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
+|       101      | Switching Protocols                               |Khi yêu cầu một trang, trình duyệt có thể nhận được mã trạng thái 101, theo sau là header “Upgrade”, cho thấy máy chủ đang thay đổi sang phiên bản HTTP khác.|
+|       102      | Processing                               |  |
+|       200      | OK                               | 	Phản hồi tiêu chuẩn cho các yêu cầu HTTP thành công. |
+|       201      | Created                               |Khi các trang mới được tạo bởi dữ liệu biểu mẫu đã đăng hoặc bởi tiến trình CGI, đây là dấu hiệu xác nhận rằng trang đó đã hoạt động. |
+|       202      | Accepted| Yêu cầu của client đã được chấp nhận, nhưng chưa được xử lý. |
+|       203      | Non-Authoritative Information                              | Thông tin chứa trong tiêu đề thực thể không phải từ trang web gốc, mà là từ máy chủ của bên thứ ba. |
+|       204      | No Content                               | Nếu nhấp vào một liên kết không có URL mục tiêu, phản hồi này được máy chủ suy ra và không cảnh báo người dùng về bất cứ điều gì. |
+|       205      | Reset Content                               | Điều này cho phép máy chủ reset lại bất kỳ nội dung nào được CGI trả về.|
+|       206      | Partial Content                               | Các file được yêu cầu không được tải xuống hoàn toàn. Ví dụ, mã trạng thái này xuất hiện khi người dùng nhấn nút dừng trước khi trang được load. |
 |       207      | Multi-Status                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       300      | Multiple Choices                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       301      | Moved Permanently                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       302      | 	Found                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       303      | See Other                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       304      | Not Modified                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       305      | Use Proxy                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       307      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       308      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
-|       400      | Continue                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
+|       300      | Multiple Choices                               |Địa chỉ được yêu cầu đề cập đến nhiều hơn một file. Tùy thuộc vào cách máy chủ được cấu hình, bạn sẽ gặp lỗi hoặc được lựa chọn trang nào mong muốn. |
+|       301      | Moved Permanently                               | Nếu máy chủ được thiết lập đúng cách, nó sẽ tự động chuyển hướng người đọc đến vị trí mới của file. |
+|       302      | 	Found                               | Trang đã được di chuyển tạm thời và URL mới có sẵn. Bạn sẽ được máy chủ điều hướng đến đó. |
+|       303      | See Other                               | Dữ liệu ở một nơi khác và phương thức GET được sử dụng để truy xuất nó. |
+|       304      | Not Modified                               | Nếu header yêu cầu bao gồm tham số ‘if modified since’, mã trạng thái này sẽ được trả về, trong trường hợp file không thay đổi kể từ ngày đó. |
+|       305      | Use Proxy                               | 	Người nhận dự kiến sẽ lặp lại yêu cầu thông qua proxy. |
+|       307      | Temporary Redirect                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
+|       308      | Permanent Redirect	                               | Yêu cầu đã được hoàn thành và phần còn lại của tiến trình có thể tiếp tục. |
+|       400      | 	Bad Request                               |Có một lỗi cú pháp trong yêu cầu và yêu cầu bị từ chối. |
+|       401      | 	Unauthorized                               |Header yêu cầu không chứa mã xác thực cần thiết và client bị từ chối truy cập. |
+|       402      |Payment Required                               | Việc thanh toán là bắt buộc. Code này vẫn chưa hoạt động. |
+|       403      | Forbidden                               | 	Client không được phép xem một file nhất định. Mã trạng thái này cũng được trả lại vào những thời điểm mà máy chủ không muốn có thêm khách truy cập. |
+|       404      | 	Not Found                               | 	Các file được yêu cầu không có trên máy chủ. Có thể bởi vì những file này đã bị xóa, hoặc chưa từng tồn tại trước đây. Nguyên nhân thường là do lỗi chính tả trong URL. |
+|       405      | Method Not Allowed                               | Phương pháp đang sử dụng để truy cập file không được cho phép. |
+|       406      | Not Acceptable                               | File được yêu cầu tồn tại nhưng không thể được sử dụng, vì hệ thống client không hiểu định dạng mà file được cấu hình. |
+|       407      | Proxy Authentication Required                               | Yêu cầu phải được cho phép trước khi diễn ra. |
+|       408      | Request Time-out                               | Máy chủ mất quá nhiều thời gian để xử lý yêu cầu. Lỗi này thường gây ra bởi lưu lượng truy cập mạng cao. |
+|       409      | Conflict                               | Quá nhiều yêu cầu đồng thời cho một file. |
+|       410      | Gone                               | Các file đã được sử dụng ở vị trí này, nhưng không còn nữa. |
+|       411      | 	Length Required                               | Yêu cầu thiếu header Content-Length. |
+|       412      | 	Precondition Failed                               |Một cấu hình nhất định được yêu cầu để chuyển file này, nhưng client chưa thiết lập cấu hình đó. |
+|       413      | 	Request Entity Too Large                             | Các file được yêu cầu là quá lớn để xử lý. |
+|       414      | 	Request-URI Too Large                               | Địa chỉ đã nhập quá dài cho máy chủ. |
+|       415      | Unsupported Media Type                               | Loại file của yêu cầu không được hỗ trợ.|
+|       416      | Request Range Not Satisfiable                               | |
+|       417      | 	Expectation Failed	                             | |
+|       421      | 	Misdirected Request                               | |
+|       422      | Unprocessable Entity                               | |
+|       423      | 	Locked                               |  |
+|       424      | 	Failed Dependency	                               |  |
+|       425      | Unordered Collection                               | |
+|       426      | Upgrade Required                               ||
+|       428      | 	Precondition Required                               |  |
+|       429      | 	Too Many Requests	                              ||
+|       431      | 	Request Header Fields Too Large                               | |
+|       451      | 	Unavailable For Legal Reasons                               | |
+|       500      | Internal Server Error                               |Phản hồi khó chịu thường xảy ra do sự cố trong code Perl, khi chương trình CGI, suPHP chạy. |
+|       501      | Not Implemented| Yêu cầu không thể được máy chủ thực hiện. |
+|       502      | 	Bad Gateway                               |	Máy chủ cố truy cập đang gửi lại lỗi.|
+|       503      | 	Service Unavailable                               |Service hoặc file đang được yêu cầu hiện không có sẵn.|
+|       504      | Gateway Time-out                               |Cổng đã hết thời gian. Giống như 408 timeout error, nhưng lỗi này xảy ra tại cổng của máy chủ. |
+|       505      | HTTP Version Not Supported                            |Giao thức HTTP yêu cầu không được hỗ trợ.|
+|       506      | Variant Also Negotiates                               |  |
+|       507      | 	Insufficient Storage                             ||
+|       508      | Loop Detected                               | |
+|       510      | Not Extended                            | |
+|       511      | Network Authentication Required	                               | |
 
 
 
