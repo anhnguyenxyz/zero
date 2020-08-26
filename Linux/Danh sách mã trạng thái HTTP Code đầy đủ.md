@@ -77,5 +77,23 @@ Các ứng dụng hiểu mã trạng thái HTTP không cần phải biết tất
 |       510      | Not Extended                            | |
 |       511      | Network Authentication Required	                               | |
 
+# Dòng trạng thái HTTP không chính thức
 
+Các dòng trạng thái HTTP bên dưới có thể được dùng để phản hồi lỗi trong một số dịch vụ của bên thứ ba, nhưng không được chỉ định bởi bất kỳ RFC nào (RFC là viết tắt của Request For Comment, là tập hợp những tài liệu về kiến nghị, đề xuất và những lời bình luận liên quan trực tiếp hoặc gián tiếp đến công nghệ, nghi thức mạng INTERNET).
 
+| Mã trạng thái  |           Cụm từ chỉ lý do             |                        Giải thích lỗi| 
+|-|-|-|
+|       103      | Checkpoint                               |  |
+|       420      | Method Failure                              ||
+|       420      | 	Enhance Your Calm                               |  |
+|       440      | Login Timeout                               |  |
+|       449      | 	Retry With                               ||
+|       450      | 	Blocked by Windows Parental Controls                              ||
+|       451      | Redirect                               |  |
+|       498      | 	Invalid Token                               ||
+|       499      | Token Required                               |  |
+|       499      | Request has been forbidden by antivirus                               ||
+|       509      | Bandwidth Limit Exceeded                               |  |
+|       530      | 	Site is frozen                               | |
+
+## Node: Cần nhớ là nhiều mã trạng thái HTTP có thể cùng có một thông báo lỗi giống nhau ở các hoàn cảnh khác nhau, như với mã lỗi Device Manager, nhưng những trường hợp này không hề liên quan đến nhau.
