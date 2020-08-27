@@ -33,17 +33,14 @@ giúp nó chuyển đến địa chỉ IP đã được chỉ định.
 ## 2. CNAME
 
 - Bản ghi Canonical Name thường được viết tắt là CNAME dùng để tạo bí danh cho một tên miền, thông thường cách tốt nhất là nó sẽ trỏ tên miền với một subfolder tới một tên miền con (subdomain) nằm dưới tên miền chính.
-Ví dụ tên miền:
-https://nguyenducanh.xyz
-sẽ được chuyển thành:
-https://www.nguyenducanh.xyz
 
 ## 3. Bản ghi MX (MX records)
-
-MX là tên viết tắt của Mail Exchange, là các bản ghi chính gửi trực tiếp email cho một tên miền.
+- MX là tên viết tắt của Mail Exchange, là các bản ghi chính gửi trực tiếp email cho một tên miền.
 Các bản ghi này hoạt động kết hợp với bản ghi địa chỉ (A records) và bản ghi tên máy chủ (NS records)
 hướng các email nhận được cho một tên miền đến các máy chủ mail thích hợp.
 Thông thường, các bản ghi MX được ưu tiên với một số thích hợp và nó sẽ chỉ ra loại máy chủ thư nào nên được sử dụng trong danh sách liệt kê.
+- Bản ghi của nhanhoa.com
+![record](Image/BanghiDNS.PNG)
 
 ## 4. Bản ghi PTR (PTR records)
 
