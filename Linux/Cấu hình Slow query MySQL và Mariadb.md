@@ -25,8 +25,8 @@ Từ SQL 5.6 trở lên , hãy sử dụng **log-slow-queries** thay cho biến 
 
 ### 3. Tạo file /var/log/mysql-slow.log và cài đặt sử dụng mysql
 ```
-touch /var/log/mysql-slow.log
-chown mysql:mysql /var/log/mysql-slow.log
+touch /var/log/slow-query.log
+chown mysql:mysql /var/log/slow-query.log
 ```
 ### 4. Restart MySQL or MariaDB
 ```
@@ -38,11 +38,11 @@ sudo systemctl restart mysqld
 ```
 ### 5. Bắt đầu monitoring slow query logfile. Phân tích file, chạy lệnh " mysqldumpslow ". Ví dụ chúng ta muốn hiển thị tất cả các bản ghi Slow query:
 ```
-mysqldumpslow -a /var/log/mysql-slow.log
+mysqldumpslow -a /var/log/slow-query.log
 ```
 View slow query
 ```
-sudo tail -f /var/log/mysql/mysql-slow.log
+sudo tail -f /var/log/mysql/slow-query.log
 ```
 
 
